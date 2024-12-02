@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "BTF_powtorka_backend": {
+      "candid": "src/BTF_powtorka_backend/BTF_powtorka_backend.did",
+      "package": "BTF_powtorka_backend",
+      "type": "rust"
+    },
+    "BTF_powtorka_frontend": {
+      "dependencies": [
+        "BTF_powtorka_backend"
+      ],
+      "source": [
+        "src/BTF_powtorka_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "BTF_powtorka_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

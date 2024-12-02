@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/BTF_powtorka_backend"
+]
+resolver = "2"
